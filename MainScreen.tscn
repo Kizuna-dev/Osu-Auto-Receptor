@@ -1,0 +1,168 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://MainScreen.gd" type="Script" id=1]
+[ext_resource path="res://Exo2RegularTheme.tres" type="Theme" id=2]
+[ext_resource path="res://Exo2.tres" type="DynamicFont" id=3]
+
+[node name="MainScreen" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="UpScroll" type="CheckBox" parent="."]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 16.0
+margin_top = -68.0
+margin_right = 217.0
+margin_bottom = -16.0
+custom_fonts/font = ExtResource( 3 )
+text = "Up Scroll ?"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColumnSize" type="SpinBox" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -138.0
+margin_top = -262.0
+margin_right = -16.0
+margin_bottom = -208.0
+theme = ExtResource( 2 )
+min_value = 1.0
+value = 64.0
+rounded = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HitPosition" type="SpinBox" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -138.0
+margin_top = -198.0
+margin_right = -16.0
+margin_bottom = -144.0
+theme = ExtResource( 2 )
+min_value = 1.0
+max_value = 1000.0
+value = 480.0
+rounded = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LaneCover" type="SpinBox" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -138.0
+margin_top = -134.0
+margin_right = -16.0
+margin_bottom = -80.0
+theme = ExtResource( 2 )
+max_value = 480.0
+rounded = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CoverColor" type="ColorPickerButton" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -179.0
+margin_top = -66.0
+margin_right = -27.0
+margin_bottom = -12.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColumnSizeText" type="Label" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -353.0
+margin_top = -252.0
+margin_right = -144.0
+margin_bottom = -208.0
+custom_fonts/font = ExtResource( 3 )
+text = "ColumnSize :"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HitPositionText" type="Label" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -340.0
+margin_top = -188.0
+margin_right = -144.0
+margin_bottom = -144.0
+custom_fonts/font = ExtResource( 3 )
+text = "HitPosition :"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LaneCoverText" type="Label" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -333.0
+margin_top = -124.0
+margin_right = -144.0
+margin_bottom = -80.0
+custom_fonts/font = ExtResource( 3 )
+text = "LaneCover :"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CoverColorText" type="Label" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -388.0
+margin_top = -60.0
+margin_right = -192.0
+margin_bottom = -16.0
+custom_fonts/font = ExtResource( 3 )
+text = "CoverColor :"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DropFileBro" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -288.0
+margin_top = -158.0
+margin_right = 288.0
+margin_bottom = -114.0
+custom_fonts/font = ExtResource( 3 )
+text = "Drop files anywhere in this window
+(Only .png tho)"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
